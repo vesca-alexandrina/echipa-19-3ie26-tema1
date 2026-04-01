@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (valid) {
         form.style.display = 'none';
-        if (successMsg) successMsg.style.display = 'block';
+        if (successMsg) successMsg.removeAttribute('hidden');
       }
     });
   }
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (sendAnother && form && successMsg) {
     sendAnother.addEventListener('click', function () {
       form.reset();
-      successMsg.style.display = 'none';
+      successMsg.setAttribute('hidden', '');
       form.style.display = 'block';
     });
   }

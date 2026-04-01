@@ -36,70 +36,133 @@
       <h1 class="heading heading--primary text-center mb-4">Get in Touch</h1>
       <p class="muted-text text-center max-w-xl mb-12">Have a question or ready to book your Cape Town adventure? We'd love to hear from you.</p>
 
-      <div class="grid-2 max-w-5xl" style="align-items:start;">
-        <!-- Contact info -->
-        <div class="contact-info">
-          <div>
-            <h2 class="subheading" style="color:var(--secondary); margin-bottom:1rem;">Contact Information</h2>
-            <div class="contact-item">
-              <span class="contact-icon">📍</span>
-              <div>
-                <p class="label">Visit Us</p>
-                <p class="muted-text">12 Bree Street, Cape Town City Centre, 8001</p>
+      <div class="contact-section max-w-5xl">
+        <div class="contact-grid">
+          <!-- Contact info -->
+          <div class="contact-info">
+            <div>
+              <h2 class="subheading" style="color:var(--secondary); margin-bottom:1rem;">Contact Information</h2>
+              <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                  <p class="label">Visit Us</p>
+                  <p class="muted-text">12 Bree Street, Cape Town City Centre, 8001</p>
+                </div>
+              </div>
+              <div class="map-container">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.8!2d18.42!3d-33.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU1JzEyLjAiUyAxOMKwMjUnMTIuMCJF!5e0!3m2!1sen!2sza!4v1234567890"
+                  width="100%" 
+                  height="220" 
+                  style="border:0; display:block;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="CapeGo Office Location - 12 Bree Street, Cape Town">
+                </iframe>
+              </div>
+              <div class="contact-item" style="margin-top:1.25rem;">
+                <span class="contact-icon">📞</span>
+                <div>
+                  <p class="label">Call Us</p>
+                  <p class="muted-text">+27 21 555 0123</p>
+                </div>
+              </div>
+              <div class="contact-item" style="margin-top:1.25rem;">
+                <span class="contact-icon">✉️</span>
+                <div>
+                  <p class="label">Email Us</p>
+                  <p class="muted-text">hello@capego.co.za</p>
+                </div>
               </div>
             </div>
-            <div class="contact-item" style="margin-top:1rem;">
-              <span class="contact-icon">📞</span>
-              <div>
-                <p class="label">Call Us</p>
-                <p class="muted-text">+27 21 555 0123</p>
-              </div>
-            </div>
-            <div class="contact-item" style="margin-top:1rem;">
-              <span class="contact-icon">✉️</span>
-              <div>
-                <p class="label">Email Us</p>
-                <p class="muted-text">hello@capego.co.za</p>
-              </div>
+
+            <div style="margin-top:2rem;">
+              <h2 class="subheading" style="color:var(--secondary); margin-bottom:0.5rem;">Office Hours</h2>
+              <ul class="hours-list">
+                <li>Monday – Friday: 08:00 – 17:00</li>
+                <li>Saturday: 09:00 – 14:00</li>
+                <li>Sunday & Public Holidays: Closed</li>
+              </ul>
             </div>
           </div>
 
-          <div>
-            <h2 class="subheading" style="color:var(--secondary); margin-bottom:0.5rem;">Office Hours</h2>
-            <ul style="font-size:0.875rem; color:var(--muted-fg);">
-              <li>Monday – Friday: 08:00 – 17:00</li>
-              <li>Saturday: 09:00 – 14:00</li>
-              <li>Sunday & Public Holidays: Closed</li>
-            </ul>
-          </div>
-        </div>
+          <!-- Form -->
+          <div class="card contact-form-card">
+            <div class="contact-form-inner">
+              <h2 class="subheading" style="color:var(--secondary); margin-bottom:0.5rem;">Send a Message</h2>
+              <p class="muted-text form-intro">Fill out the form below and we'll get back to you shortly.</p>
+              <form id="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    <p class="form-error" id="name-error"></p>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    <p class="form-error" id="email-error"></p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+27 XX XXX XXXX">
+                    <p class="form-error" id="phone-error"></p>
+                  </div>
+                  <div class="form-group">
+                    <label for="tour">Preferred Tour</label>
+                    <select id="tour" name="tour">
+                      <option value="">Select a tour</option>
+                      <option value="table-mountain">Table Mountain Experience</option>
+                      <option value="cape-point">Cape Point Adventure</option>
+                      <option value="wine-lands">Winelands Discovery</option>
+                      <option value="city-tour">Cape Town City Tour</option>
+                      <option value="penguins">Boulders Beach Penguins</option>
+                      <option value="robben-island">Robben Island Journey</option>
+                      <option value="garden-route">Garden Route Expedition</option>
+                      <option value="other">Other / Not Sure Yet</option>
+                    </select>
+                    <p class="form-error" id="tour-error"></p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="travel-date">Preferred Travel Date</label>
+                    <input type="date" id="travel-date" name="travel-date">
+                    <p class="form-error" id="travel-date-error"></p>
+                  </div>
+                  <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests">
+                      <option value="">Select guests</option>
+                      <option value="1">1 Guest</option>
+                      <option value="2">2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                      <option value="5">5 Guests</option>
+                      <option value="6-10">6-10 Guests</option>
+                      <option value="11+">11+ Guests (Group)</option>
+                    </select>
+                    <p class="form-error" id="guests-error"></p>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Tell us about your dream Cape Town trip, any special requirements, or questions you have..." required></textarea>
+                  <p class="form-error" id="message-error"></p>
+                </div>
+                <button type="submit" class="btn-primary btn-block">Send Message</button>
+              </form>
 
-        <!-- Form -->
-        <div class="card" style="padding:2rem;">
-          <form id="contact-form" novalidate>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Your full name">
-              <p class="form-error" id="name-error"></p>
+              <div id="form-success" class="success-message" hidden>
+                <div class="success-icon"><span>✈️</span></div>
+                <h3 class="subheading" style="color:var(--secondary); margin-bottom:0.5rem;">Message Sent!</h3>
+                <p class="muted-text">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                <button id="send-another" class="btn-secondary mt-6">Send Another</button>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="you@example.com">
-              <p class="form-error" id="email-error"></p>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" rows="5" placeholder="Tell us about your dream Cape Town trip..."></textarea>
-              <p class="form-error" id="message-error"></p>
-            </div>
-            <button type="submit" class="btn-primary" style="width:100%; text-align:center;">Send Message</button>
-          </form>
-
-          <div id="form-success" class="success-message" style="display:none;">
-            <div class="success-icon"><span style="font-size:1.75rem;">✈️</span></div>
-            <h3 class="subheading" style="color:var(--secondary); margin-bottom:0.5rem;">Message Sent!</h3>
-            <p class="muted-text">Thank you for reaching out. We'll get back to you within 24 hours.</p>
-            <button id="send-another" class="btn-secondary mt-6" style="font-size:0.875rem;">Send Another</button>
           </div>
         </div>
       </div>
