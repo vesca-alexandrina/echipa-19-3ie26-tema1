@@ -47,3 +47,11 @@ a fost adaptat pentru diferite dimensiuni de ecran (responsive), astfel încât 
 
 Modificările au fost realizate exclusiv la nivel de HTML și CSS, fără a afecta funcționalitatea existentă a site-ului.
 
+-Ecaterina-
+
+Pagina de contact a fost îmbunătățită pentru a avea un aspect mai echilibrat și mai potrivit pentru un site de travel. În secțiunea de contact a fost adăugată o hartă sub adresa „Visit Us”, pentru o prezentare mai clară a locației.
+
+Formularul din partea dreaptă a fost extins prin adăugarea unor câmpuri relevante, precum număr de telefon, tur preferat, data călătoriei și numărul de persoane, astfel încât să fie mai complet și mai util pentru solicitările utilizatorilor. De asemenea, a fost eliminat mesajul de succes afișat inițial, pentru ca formularul să rămână clar și logic la prima vizualizare.
+
+Au fost realizate ajustări de stil și aliniere pentru a păstra proporția dintre cele două coloane și pentru a îmbunătăți aspectul responsive al paginii.
+
