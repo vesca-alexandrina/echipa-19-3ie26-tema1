@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — CapeGo</title>
+  <meta name="description" content="Browse stunning photos of Cape Town's landmarks, beaches, and landscapes.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav class="navbar__inner">
+      <a href="index.html" class="navbar__logo">CapeGo</a>
+      <ul class="navbar__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="navbar__toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+    <div class="navbar__mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tours.html">Tours</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-16">
+    <section class="section text-center">
+      <h1 class="heading heading--primary mb-4">Gallery</h1>
+      <p class="muted-text max-w-3xl mb-12">A glimpse into the breathtaking landscapes, vibrant cultures, and unforgettable moments that await you in Cape Town.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item span-2"><img src="img/hero-capetown.jpg" alt="Panoramic Cape Town with Table Mountain" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-penguins.jpg" alt="African penguins at Boulders Beach" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-bokaap.jpg" alt="Colorful Bo-Kaap neighbourhood" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-tablemountain.jpg" alt="Table Mountain cable car" loading="lazy"></div>
+        <div class="gallery-item col-span-2"><img src="img/gallery-winelands.jpg" alt="Cape Winelands vineyards" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-kirstenbosch.jpg" alt="Kirstenbosch Botanical Gardens" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-chapmans.jpg" alt="Chapman's Peak coastal drive" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-robbenisland.jpg" alt="Robben Island from the harbour" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-waterfront.jpg" alt="V&A Waterfront at sunset" loading="lazy"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+    <img id="lightbox-img" src="" alt="Gallery preview">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo">CapeGo</div>
+        <p>Your gateway to unforgettable Cape Town adventures. We craft authentic travel experiences that connect you with the beauty and culture of the Mother City.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="footer__contact">
+          <li><span class="icon">📍</span> 12 Bree Street, Cape Town, 8001</li>
+          <li><span class="icon">📞</span> +27 21 555 0123</li>
+          <li><span class="icon">✉️</span> hello@capego.co.za</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 CapeGo Travel. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
