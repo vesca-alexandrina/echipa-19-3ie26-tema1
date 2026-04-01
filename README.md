@@ -54,4 +54,14 @@ Pagina de contact a fost îmbunătățită pentru a avea un aspect mai echilibra
 Formularul din partea dreaptă a fost extins prin adăugarea unor câmpuri relevante, precum număr de telefon, tur preferat, data călătoriei și numărul de persoane, astfel încât să fie mai complet și mai util pentru solicitările utilizatorilor. De asemenea, a fost eliminat mesajul de succes afișat inițial, pentru ca formularul să rămână clar și logic la prima vizualizare.
 
 Au fost realizate ajustări de stil și aliniere pentru a păstra proporția dintre cele două coloane și pentru a îmbunătăți aspectul responsive al paginii.
+-Tijana-
 
+Pagina Gallery a fost modificată pentru a se integra mai bine vizual cu homepage-ul și pentru a păstra coerența stilistică a site-ului.
+
+A fost adăugată o secțiune de tip banner cu imagine și overlay, pentru un impact vizual mai puternic și o structură similară cu celelalte pagini. De asemenea, a fost introdusă o secțiune de intro, împreună cu carduri tematice, pentru a organiza mai clar conținutul și a evidenția principalele elemente ale galeriei.
+
+Galeria de imagini a fost reorganizată într-un grid responsive, cu variații de dimensiune pentru unele imagini, pentru un aspect mai dinamic. A fost implementat și un efect de tip lightbox, care permite vizualizarea imaginilor la dimensiune mai mare.
+
+În plus, au fost adăugate secțiuni suplimentare cu carduri și un call-to-action, pentru a îmbunătăți experiența utilizatorului și a încuraja navigarea către alte pagini.
+
+Modificările au fost realizate la nivel de HTML, CSS și JavaScript, fără a afecta funcționalitățile existente.
