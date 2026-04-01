@@ -1,3 +1,34 @@
+Tematica site ului
+
+Site-ul „CapeGo” reprezintă o platformă de prezentare pentru o agenție de turism specializată în experiențe din Cape Town. Scopul acestuia este de a promova destinații turistice, tururi organizate și activități locale, oferind utilizatorilor o imagine clară și atractivă asupra serviciilor oferite.
+
+Website-ul include pagini precum Home, About, Tours, Gallery și Contact, fiecare având un layout diferit și conținut real. Designul este orientat către o experiență modernă și ușor de utilizat, fiind adaptat pentru dispozitive mobile și desktop.
+
+Platformele utilizare pentru creearea sa
+
+Pentru realizarea proiectului au fost utilizate următoarele platforme și tehnologii:
+
+Lovable  – pentru generarea prototipului inițial
+Visual Studio Code – pentru editarea și dezvoltarea codului
+GitHub – pentru versionare și colaborare în echipă
+WAMP – pentru rularea locală a site-ului
+
+Tehnologii utilizate:
+
+HTML5 – structură
+CSS3 – design și responsive
+JavaScript – interactivitate 
+
+Sursele de inspiratie
+
+Site-uri moderne de agenții de turism (layout cu hero banner, secțiuni de prezentare și galerii)
+Prototipurile generate cu ajutorul platformelor AI (Lovable)
+
+Materialele bibliografice
+
+Pentru realizarea proiectului nu au fost utilizate materiale bibliografice clasice. Dezvoltarea site-ului s-a bazat pe cunoștințele dobândite în cadrul laboratorului și pe utilizarea platformelor AI pentru generarea prototipului inițial.
+Structura și funcționalitățile au fost ulterior adaptate și implementate manual în HTML, CSS și JavaScript.
+
 **Modificări realizate**:
 
 -Alexandrina-
