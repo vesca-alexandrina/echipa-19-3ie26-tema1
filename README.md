@@ -69,3 +69,17 @@ La nivel de conținut vizual, au fost adăugate subtitluri pentru delimitarea se
 Designul a fost adaptat astfel încât să rămână responsive și funcțional pe diferite dimensiuni de ecran, păstrând atât lizibilitatea, cât și aspectul modern al paginii.
 
 Modificările au fost realizate exclusiv la nivel de structură HTML și organizare de layout, fără a afecta funcționalitatea existentă a site-ului.
+
+
+-Alexia-
+Pagina „Gallery” a fost redesenată pentru a îmbunătăți experiența vizuală și interacțiunea utilizatorului cu imaginile.
+
+Structura galeriei a fost optimizată prin utilizarea unui layout de tip grid (CSS Grid), care permite o organizare mai clară și echilibrată a imaginilor. Unele elemente au fost evidențiate prin extinderea pe mai multe coloane, pentru a crea un efect vizual dinamic și mai atractiv.
+
+Fiecare imagine a fost integrată într-un container interactiv, transformând galeria într-o colecție de carduri vizuale. A fost adăugat un overlay cu titlu și categorie pentru fiecare imagine, care apare la hover, oferind informații suplimentare și un aspect modern. De asemenea, au fost implementate efecte de animație (zoom și shadow) pentru a îmbunătăți interactivitatea.
+
+Funcționalitatea galeriei a fost extinsă prin implementarea unui lightbox, care permite deschiderea imaginilor într-un mod mărit, într-o fereastră de tip modal. Aceasta îmbunătățește experiența utilizatorului și facilitează vizualizarea detaliilor.
+
+La nivel de stilizare, au fost îmbunătățite spațierile, alinierea și ierarhia vizuală, iar designul a fost adaptat pentru diferite dimensiuni de ecran (responsive), astfel încât galeria să fie ușor de utilizat atât pe desktop, cât și pe dispozitive mobile.
+
+Modificările au fost realizate la nivel de HTML, CSS și JavaScript, fără a afecta celelalte pagini sau funcționalitatea generală a site-ului.
