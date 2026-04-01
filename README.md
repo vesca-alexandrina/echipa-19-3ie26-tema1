@@ -58,12 +58,14 @@ Au fost realizate ajustări de stil și aliniere pentru a păstra proporția din
 
 -Tijana-
 
-Pagina Gallery a fost modificată pentru a se integra mai bine vizual cu homepage-ul și pentru a păstra coerența stilistică a site-ului.
+Pagina „Tours” a fost reorganizată pentru a îmbunătăți structura vizuală și claritatea conținutului, fără a afecta designul general al site-ului.
 
-A fost adăugată o secțiune de tip banner cu imagine și overlay, pentru un impact vizual mai puternic și o structură similară cu celelalte pagini. De asemenea, a fost introdusă o secțiune de intro, împreună cu carduri tematice, pentru a organiza mai clar conținutul și a evidenția principalele elemente ale galeriei.
+Layout-ul principal a fost modificat prin împărțirea conținutului în secțiuni distincte, folosind elemente <section> pentru o structură mai clară și mai bine organizată. Secțiunea introductivă a fost separată de zona cu tururi, ceea ce oferă o ierarhie vizuală mai bună și face pagina mai ușor de parcurs.
 
-Galeria de imagini a fost reorganizată într-un grid responsive, cu variații de dimensiune pentru unele imagini, pentru un aspect mai dinamic. A fost implementat și un efect de tip lightbox, care permite vizualizarea imaginilor la dimensiune mai mare.
+Tururile principale au fost evidențiate într-o secțiune separată, cu un layout mai aerisit, pentru a atrage atenția asupra celor mai importante experiențe oferite. Restul tururilor au fost păstrate într-un grid clasic, astfel încât designul existent să rămână coerent și echilibrat.
 
-În plus, au fost adăugate secțiuni suplimentare cu carduri și un call-to-action, pentru a îmbunătăți experiența utilizatorului și a încuraja navigarea către alte pagini.
+La nivel de conținut vizual, au fost adăugate subtitluri pentru delimitarea secțiunilor, iar spațierea dintre elemente a fost ajustată pentru a crea mai multă claritate și mai mult echilibru între blocurile de conținut. În plus, butoanele și cardurile au fost păstrate în același stil vizual, astfel încât modificările să se integreze natural în identitatea site-ului.
 
-Modificările au fost realizate la nivel de HTML, CSS și JavaScript, fără a afecta funcționalitățile existente.
+Designul a fost adaptat astfel încât să rămână responsive și funcțional pe diferite dimensiuni de ecran, păstrând atât lizibilitatea, cât și aspectul modern al paginii.
+
+Modificările au fost realizate exclusiv la nivel de structură HTML și organizare de layout, fără a afecta funcționalitatea existentă a site-ului.
