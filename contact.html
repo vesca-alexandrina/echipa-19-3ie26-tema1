@@ -9,201 +9,130 @@
 </head>
 <body>
 
-  <!-- Skip to main content link for accessibility -->
-  <a href="#main-content" class="sr-only">Skip to main content</a>
-
   <!-- Navbar -->
-  <header class="navbar" role="banner">
+  <header class="navbar">
     <nav class="navbar__inner">
-      <a href="index.html" class="navbar__logo" aria-label="CapeGo - Travel Adventures">CapeGo</a>
-      
-      <button class="navbar__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-menu">
-        <span class="navbar__toggle-icon"></span>
-      </button>
-
-      <ul class="navbar__links" id="navbar-menu" role="navigation" aria-label="Main navigation">
-        <li><a href="index.html" class="navbar__link">Home</a></li>
-        <li><a href="about.html" class="navbar__link">About</a></li>
-        <li><a href="tours.html" class="navbar__link">Tours</a></li>
-        <li><a href="gallery.html" class="navbar__link">Gallery</a></li>
-        <li><a href="contact.html" class="navbar__link navbar__link--active" aria-current="page">Contact</a></li>
+      <a href="index.html" class="navbar__logo">CapeGo</a>
+      <ul class="navbar__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
+      <button class="navbar__toggle" aria-label="Toggle menu">☰</button>
     </nav>
+    <div class="navbar__mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tours.html">Tours</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </header>
 
-  <!-- Main Content -->
-  <main id="main-content">
-    <!-- Page Header Section -->
-    <section class="page-header">
-      <div class="page-header__content">
-        <h1 class="page-header__title">Get in Touch</h1>
-        <p class="page-header__subtitle">Have a question or ready to book your Cape Town adventure? We'd love to hear from you.</p>
-      </div>
-    </section>
+  <main class="pt-16">
+    <section class="section">
+      <h1 class="heading heading--primary text-center mb-4">Get in Touch</h1>
+      <p class="muted-text text-center max-w-xl mb-12">Have a question or ready to book your Cape Town adventure? We'd love to hear from you.</p>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-      <div class="container">
-        <div class="contact-layout">
-          <!-- Contact Information Panel -->
-          <aside class="contact-panel contact-panel--info">
-            <section class="contact-block">
-              <h2 class="contact-block__title">Contact Information</h2>
-              
-              <address class="contact-list">
-                <div class="contact-item">
-                  <span class="contact-item__icon" aria-hidden="true">📍</span>
-                  <div class="contact-item__content">
-                    <p class="contact-item__label">Visit Us</p>
-                    <p class="contact-item__text">12 Bree Street, Cape Town City Centre, 8001</p>
-                  </div>
-                </div>
-
-                <div class="contact-item">
-                  <span class="contact-item__icon" aria-hidden="true">📞</span>
-                  <div class="contact-item__content">
-                    <p class="contact-item__label">Call Us</p>
-                    <a href="tel:+27215550123" class="contact-item__text">+27 21 555 0123</a>
-                  </div>
-                </div>
-
-                <div class="contact-item">
-                  <span class="contact-item__icon" aria-hidden="true">✉️</span>
-                  <div class="contact-item__content">
-                    <p class="contact-item__label">Email Us</p>
-                    <a href="mailto:hello@capego.co.za" class="contact-item__text">hello@capego.co.za</a>
-                  </div>
-                </div>
-              </address>
-            </section>
-
-            <section class="contact-block">
-              <h2 class="contact-block__title">Office Hours</h2>
-              <dl class="office-hours">
-                <dt class="office-hours__day">Monday – Friday</dt>
-                <dd class="office-hours__time">08:00 – 17:00</dd>
-                
-                <dt class="office-hours__day">Saturday</dt>
-                <dd class="office-hours__time">09:00 – 14:00</dd>
-                
-                <dt class="office-hours__day">Sunday & Public Holidays</dt>
-                <dd class="office-hours__time">Closed</dd>
-              </dl>
-            </section>
-          </aside>
-
-          <!-- Contact Form Panel -->
-          <section class="contact-panel contact-panel--form">
-            <div class="form-wrapper">
-              <form id="contact-form" class="contact-form" method="POST" novalidate>
-                <fieldset class="form-fieldset">
-                  <legend class="sr-only">Send us a message</legend>
-
-                  <div class="form-group">
-                    <label for="contact-name" class="form-label">
-                      Name
-                      <span class="form-required" aria-label="required">*</span>
-                    </label>
-                    <input 
-                      type="text" 
-                      id="contact-name" 
-                      name="name" 
-                      class="form-input"
-                      placeholder="Your full name"
-                      required
-                      aria-required="true"
-                      aria-describedby="name-error">
-                    <p class="form-error" id="name-error" role="alert"></p>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="contact-email" class="form-label">
-                      Email
-                      <span class="form-required" aria-label="required">*</span>
-                    </label>
-                    <input 
-                      type="email" 
-                      id="contact-email" 
-                      name="email" 
-                      class="form-input"
-                      placeholder="you@example.com"
-                      required
-                      aria-required="true"
-                      aria-describedby="email-error">
-                    <p class="form-error" id="email-error" role="alert"></p>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="contact-message" class="form-label">
-                      Message
-                      <span class="form-required" aria-label="required">*</span>
-                    </label>
-                    <textarea 
-                      id="contact-message" 
-                      name="message" 
-                      class="form-textarea"
-                      rows="6" 
-                      placeholder="Tell us about your dream Cape Town trip..."
-                      required
-                      aria-required="true"
-                      aria-describedby="message-error"></textarea>
-                    <p class="form-error" id="message-error" role="alert"></p>
-                  </div>
-
-                  <button type="submit" class="btn btn-primary btn-large">
-                    Send Message
-                  </button>
-                </fieldset>
-              </form>
-
-              <!-- Success Message (Hidden by default, shown via JS) -->
-              <div id="form-success" class="success-message" role="status" aria-live="polite" hidden>
-                <div class="success-message__icon" aria-hidden="true">✈️</div>
-                <h3 class="success-message__title">Message Sent!</h3>
-                <p class="success-message__text">Thank you for reaching out. We'll get back to you within 24 hours.</p>
-                <button id="send-another" class="btn btn-secondary" type="button">
-                  Send Another Message
-                </button>
+      <div class="grid-2 max-w-5xl" style="align-items:start;">
+        <!-- Contact info -->
+        <div class="contact-info">
+          <div>
+            <h2 class="subheading" style="color:var(--secondary); margin-bottom:1rem;">Contact Information</h2>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <p class="label">Visit Us</p>
+                <p class="muted-text">12 Bree Street, Cape Town City Centre, 8001</p>
               </div>
             </div>
-          </section>
+            <div class="contact-item" style="margin-top:1rem;">
+              <span class="contact-icon">📞</span>
+              <div>
+                <p class="label">Call Us</p>
+                <p class="muted-text">+27 21 555 0123</p>
+              </div>
+            </div>
+            <div class="contact-item" style="margin-top:1rem;">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <p class="label">Email Us</p>
+                <p class="muted-text">hello@capego.co.za</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="subheading" style="color:var(--secondary); margin-bottom:0.5rem;">Office Hours</h2>
+            <ul style="font-size:0.875rem; color:var(--muted-fg);">
+              <li>Monday – Friday: 08:00 – 17:00</li>
+              <li>Saturday: 09:00 – 14:00</li>
+              <li>Sunday & Public Holidays: Closed</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="card" style="padding:2rem;">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your full name">
+              <p class="form-error" id="name-error"></p>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@example.com">
+              <p class="form-error" id="email-error"></p>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell us about your dream Cape Town trip..."></textarea>
+              <p class="form-error" id="message-error"></p>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%; text-align:center;">Send Message</button>
+          </form>
+
+          <div id="form-success" class="success-message" style="display:none;">
+            <div class="success-icon"><span style="font-size:1.75rem;">✈️</span></div>
+            <h3 class="subheading" style="color:var(--secondary); margin-bottom:0.5rem;">Message Sent!</h3>
+            <p class="muted-text">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+            <button id="send-another" class="btn-secondary mt-6" style="font-size:0.875rem;">Send Another</button>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="footer" role="contentinfo">
-    <div class="footer__content">
-      <div class="footer__section">
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
         <div class="footer__logo">CapeGo</div>
-        <p class="footer__description">Your gateway to unforgettable Cape Town adventures. We craft authentic travel experiences that connect you with the beauty and culture of the Mother City.</p>
+        <p>Your gateway to unforgettable Cape Town adventures. We craft authentic travel experiences that connect you with the beauty and culture of the Mother City.</p>
       </div>
-
-      <nav class="footer__section" aria-label="Quick links">
-        <h3 class="footer__heading">Quick Links</h3>
-        <ul class="footer__list">
-          <li><a href="index.html" class="footer__link">Home</a></li>
-          <li><a href="about.html" class="footer__link">About</a></li>
-          <li><a href="tours.html" class="footer__link">Tours</a></li>
-          <li><a href="gallery.html" class="footer__link">Gallery</a></li>
-          <li><a href="contact.html" class="footer__link">Contact</a></li>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
-
-      <address class="footer__section" aria-label="Contact details">
-        <h3 class="footer__heading">Contact Info</h3>
-        <ul class="footer__list footer__list--address">
-          <li><span aria-hidden="true">📍</span> 12 Bree Street, Cape Town, 8001</li>
-          <li><span aria-hidden="true">📞</span> <a href="tel:+27215550123">+27 21 555 0123</a></li>
-          <li><span aria-hidden="true">✉️</span> <a href="mailto:hello@capego.co.za">hello@capego.co.za</a></li>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="footer__contact">
+          <li><span class="icon">📍</span> 12 Bree Street, Cape Town, 8001</li>
+          <li><span class="icon">📞</span> +27 21 555 0123</li>
+          <li><span class="icon">✉️</span> hello@capego.co.za</li>
         </ul>
-      </address>
+      </div>
     </div>
-
-    <div class="footer__bottom">
-      <p>&copy; 2026 CapeGo Travel. All rights reserved.</p>
-    </div>
+    <div class="footer__bottom">© 2026 CapeGo Travel. All rights reserved.</div>
   </footer>
 
   <script src="js/main.js"></script>
