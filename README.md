@@ -55,3 +55,17 @@ Formularul din partea dreaptă a fost extins prin adăugarea unor câmpuri relev
 
 Au fost realizate ajustări de stil și aliniere pentru a păstra proporția dintre cele două coloane și pentru a îmbunătăți aspectul responsive al paginii.
 
+
+-Tijana-
+
+Pagina „Tours” a fost reorganizată pentru a îmbunătăți structura vizuală și claritatea conținutului, fără a afecta designul general al site-ului.
+
+Layout-ul principal a fost modificat prin împărțirea conținutului în secțiuni distincte, folosind elemente <section> pentru o structură mai clară și mai bine organizată. Secțiunea introductivă a fost separată de zona cu tururi, ceea ce oferă o ierarhie vizuală mai bună și face pagina mai ușor de parcurs.
+
+Tururile principale au fost evidențiate într-o secțiune separată, cu un layout mai aerisit, pentru a atrage atenția asupra celor mai importante experiențe oferite. Restul tururilor au fost păstrate într-un grid clasic, astfel încât designul existent să rămână coerent și echilibrat.
+
+La nivel de conținut vizual, au fost adăugate subtitluri pentru delimitarea secțiunilor, iar spațierea dintre elemente a fost ajustată pentru a crea mai multă claritate și mai mult echilibru între blocurile de conținut. În plus, butoanele și cardurile au fost păstrate în același stil vizual, astfel încât modificările să se integreze natural în identitatea site-ului.
+
+Designul a fost adaptat astfel încât să rămână responsive și funcțional pe diferite dimensiuni de ecran, păstrând atât lizibilitatea, cât și aspectul modern al paginii.
+
+Modificările au fost realizate exclusiv la nivel de structură HTML și organizare de layout, fără a afecta funcționalitatea existentă a site-ului.
