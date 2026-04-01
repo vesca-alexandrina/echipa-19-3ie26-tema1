@@ -11,48 +11,163 @@
 
   <!-- Navbar -->
   <header class="navbar">
-    <nav class="navbar__inner">
+    <nav class="navbar__inner" aria-label="Main navigation">
       <a href="index.html" class="navbar__logo">CapeGo</a>
+
       <ul class="navbar__links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="tours.html">Tours</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="navbar__toggle" aria-label="Toggle menu">☰</button>
+
+      <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </nav>
-    <div class="navbar__mobile">
+
+    <div class="navbar__mobile" id="mobile-menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="tours.html">Tours</a>
-      <a href="gallery.html">Gallery</a>
+      <a href="gallery.html" class="active" aria-current="page">Gallery</a>
       <a href="contact.html">Contact</a>
     </div>
   </header>
 
   <main class="pt-16">
+    <!-- Intro -->
     <section class="section text-center">
+      <p class="muted-text mb-2" style="letter-spacing: 0.08em; text-transform: uppercase;">Cape Town Moments</p>
       <h1 class="heading heading--primary mb-4">Gallery</h1>
-      <p class="muted-text max-w-3xl mb-12">A glimpse into the breathtaking landscapes, vibrant cultures, and unforgettable moments that await you in Cape Town.</p>
+      <p class="muted-text max-w-3xl mb-12">
+        A glimpse into the breathtaking landscapes, vibrant culture, and unforgettable experiences that make Cape Town one of the world’s most captivating destinations.
+      </p>
 
-      <div class="gallery-grid">
-        <div class="gallery-item span-2"><img src="img/hero-capetown.jpg" alt="Panoramic Cape Town with Table Mountain" loading="lazy"></div>
-        <div class="gallery-item"><img src="img/gallery-penguins.jpg" alt="African penguins at Boulders Beach" loading="lazy"></div>
-        <div class="gallery-item"><img src="img/gallery-bokaap.jpg" alt="Colorful Bo-Kaap neighbourhood" loading="lazy"></div>
-        <div class="gallery-item"><img src="img/gallery-tablemountain.jpg" alt="Table Mountain cable car" loading="lazy"></div>
-        <div class="gallery-item col-span-2"><img src="img/gallery-winelands.jpg" alt="Cape Winelands vineyards" loading="lazy"></div>
-        <div class="gallery-item"><img src="img/gallery-kirstenbosch.jpg" alt="Kirstenbosch Botanical Gardens" loading="lazy"></div>
-        <div class="gallery-item"><img src="img/gallery-chapmans.jpg" alt="Chapman's Peak coastal drive" loading="lazy"></div>
-        <div class="gallery-item"><img src="img/gallery-robbenisland.jpg" alt="Robben Island from the harbour" loading="lazy"></div>
-        <div class="gallery-item"><img src="img/gallery-waterfront.jpg" alt="V&A Waterfront at sunset" loading="lazy"></div>
+      <!-- Gallery -->
+      <div class="gallery-grid" aria-label="Cape Town photo gallery">
+        <figure class="gallery-item span-2">
+          <button class="gallery-card" type="button" data-image="img/hero-capetown.jpg" data-alt="Panoramic Cape Town with Table Mountain at sunset">
+            <img src="img/hero-capetown.jpg" alt="Panoramic Cape Town with Table Mountain at sunset" loading="lazy">
+            <span class="gallery-overlay">
+              <span class="gallery-overlay__content">
+                <span class="gallery-tag">Scenic View</span>
+                <span class="gallery-title">Table Mountain Panorama</span>
+              </span>
+            </span>
+          </button>
+          <figcaption class="sr-only">Panoramic Cape Town with Table Mountain at sunset.</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-card" type="button" data-image="img/gallery-penguins.jpg" data-alt="African penguins walking on Boulders Beach">
+            <img src="img/gallery-penguins.jpg" alt="African penguins walking on Boulders Beach" loading="lazy">
+            <span class="gallery-overlay">
+              <span class="gallery-overlay__content">
+                <span class="gallery-tag">Wildlife</span>
+                <span class="gallery-title">Boulders Beach Penguins</span>
+              </span>
+            </span>
+          </button>
+          <figcaption class="sr-only">African penguins at Boulders Beach.</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-card" type="button" data-image="img/gallery-bokaap.jpg" data-alt="Bright colorful houses in the Bo-Kaap neighborhood">
+            <img src="img/gallery-bokaap.jpg" alt="Bright colorful houses in the Bo-Kaap neighborhood" loading="lazy">
+            <span class="gallery-overlay">
+              <span class="gallery-overlay__content">
+                <span class="gallery-tag">Culture</span>
+                <span class="gallery-title">Bo-Kaap Streets</span>
+              </span>
+            </span>
+          </button>
+          <figcaption class="sr-only">The colorful Bo-Kaap neighborhood.</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-card" type="button" data-image="img/gallery-tablemountain.jpg" data-alt="Table Mountain cable car rising above the city">
+            <img src="img/gallery-tablemountain.jpg" alt="Table Mountain cable car rising above the city" loading="lazy">
+            <span class="gallery-overlay">
+              <span class="gallery-overlay__content">
+                <span class="gallery-tag">Adventure</span>
+                <span class="gallery-title">Cableway Experience</span>
+              </span>
+            </span>
+          </button>
+          <figcaption class="sr-only">Table Mountain cable car above Cape Town.</figcaption>
+        </figure>
+
+        <figure class="gallery-item col-span-2">
+          <button class="gallery-card" type="button" data-image="img/gallery-winelands.jpg" data-alt="Cape Winelands vineyards stretching across rolling hills">
+            <img src="img/gallery-winelands.jpg" alt="Cape Winelands vineyards stretching across rolling hills" loading="lazy">
+            <span class="gallery-overlay">
+              <span class="gallery-overlay__content">
+                <span class="gallery-tag">Escape</span>
+                <span class="gallery-title">Cape Winelands</span>
+              </span>
+            </span>
+          </button>
+          <figcaption class="sr-only">Cape Winelands vineyards and landscapes.</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-card" type="button" data-image="img/gallery-kirstenbosch.jpg" data-alt="Lush greenery in Kirstenbosch Botanical Gardens">
+            <img src="img/gallery-kirstenbosch.jpg" alt="Lush greenery in Kirstenbosch Botanical Gardens" loading="lazy">
+            <span class="gallery-overlay">
+              <span class="gallery-overlay__content">
+                <span class="gallery-tag">Nature</span>
+                <span class="gallery-title">Kirstenbosch Gardens</span>
+              </span>
+            </span>
+          </button>
+          <figcaption class="sr-only">Kirstenbosch Botanical Gardens.</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-card" type="button" data-image="img/gallery-chapmans.jpg" data-alt="Chapman's Peak Drive along the dramatic coastline">
+            <img src="img/gallery-chapmans.jpg" alt="Chapman's Peak Drive along the dramatic coastline" loading="lazy">
+            <span class="gallery-overlay">
+              <span class="gallery-overlay__content">
+                <span class="gallery-tag">Road Trip</span>
+                <span class="gallery-title">Chapman’s Peak</span>
+              </span>
+            </span>
+          </button>
+          <figcaption class="sr-only">Chapman’s Peak coastal drive.</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-card" type="button" data-image="img/gallery-robbenisland.jpg" data-alt="View of Robben Island from the harbor">
+            <img src="img/gallery-robbenisland.jpg" alt="View of Robben Island from the harbor" loading="lazy">
+            <span class="gallery-overlay">
+              <span class="gallery-overlay__content">
+                <span class="gallery-tag">History</span>
+                <span class="gallery-title">Robben Island</span>
+              </span>
+            </span>
+          </button>
+          <figcaption class="sr-only">Robben Island viewed from the harbor.</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-card" type="button" data-image="img/gallery-waterfront.jpg" data-alt="V&A Waterfront glowing at sunset">
+            <img src="img/gallery-waterfront.jpg" alt="V&A Waterfront glowing at sunset" loading="lazy">
+            <span class="gallery-overlay">
+              <span class="gallery-overlay__content">
+                <span class="gallery-tag">City Life</span>
+                <span class="gallery-title">V&A Waterfront</span>
+              </span>
+            </span>
+          </button>
+          <figcaption class="sr-only">V&A Waterfront at sunset.</figcaption>
+        </figure>
       </div>
     </section>
   </main>
 
   <!-- Lightbox -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close image preview">&times;</button>
     <img id="lightbox-img" src="" alt="Gallery preview">
   </div>
 
@@ -61,8 +176,11 @@
     <div class="footer__inner">
       <div>
         <div class="footer__logo">CapeGo</div>
-        <p>Your gateway to unforgettable Cape Town adventures. We craft authentic travel experiences that connect you with the beauty and culture of the Mother City.</p>
+        <p>
+          Your gateway to unforgettable Cape Town adventures. We craft authentic travel experiences that connect you with the beauty and culture of the Mother City.
+        </p>
       </div>
+
       <div>
         <h4>Quick Links</h4>
         <ul class="footer__links">
@@ -73,6 +191,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+
       <div>
         <h4>Contact Us</h4>
         <ul class="footer__contact">
@@ -82,9 +201,51 @@
         </ul>
       </div>
     </div>
+
     <div class="footer__bottom">© 2026 CapeGo Travel. All rights reserved.</div>
   </footer>
 
   <script src="js/main.js"></script>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const galleryButtons = document.querySelectorAll('.gallery-card');
+
+    galleryButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const imageSrc = button.getAttribute('data-image');
+        const imageAlt = button.getAttribute('data-alt');
+
+        lightboxImg.src = imageSrc;
+        lightboxImg.alt = imageAlt;
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && lightbox.classList.contains('open')) {
+        closeLightbox();
+      }
+    });
+  </script>
 </body>
 </html>

@@ -216,6 +216,91 @@ img { max-width: 100%; display: block; }
 }
 .gallery-grid .gallery-item:hover img { transform: scale(1.1); }
 
+.gallery-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.gallery-card:focus-visible {
+  outline: 3px solid rgba(224, 90, 43, 0.35);
+  outline-offset: 4px;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(30, 37, 51, 0.82), rgba(30, 37, 51, 0.08) 55%, rgba(30, 37, 51, 0));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.gallery-card:hover .gallery-overlay,
+.gallery-card:focus-visible .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay__content {
+  text-align: left;
+  color: #fff;
+}
+
+.gallery-tag {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gallery-title {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.gallery-item {
+  box-shadow: 0 10px 30px rgba(30, 37, 51, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(30, 37, 51, 0.14);
+}
+
+.lightbox {
+  backdrop-filter: blur(6px);
+  animation: fadeInUp 0.3s ease;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 /* ── Lightbox ── */
 .lightbox {
   display: none; position: fixed; inset: 0; z-index: 100;
